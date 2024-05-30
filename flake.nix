@@ -107,6 +107,7 @@
 		mkdir -p $out
 		cp -r $src/{devkitARM,libgba,libnds,libctru,libmirko,liborcus,portlibs,tools} $out
 		rm -rf $out/pacman
+		ln -s $out/devkitARM/bin $out/bin
 	  '';
 	};
 
