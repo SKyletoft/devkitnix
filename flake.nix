@@ -18,9 +18,9 @@
 	imageARM = pkgs.dockerTools.pullImage {
 	  imageName = "devkitpro/devkitarm";
 	  imageDigest = "sha256:2ee5e6ecdc768aa7fb8f2e37be2e27ce33299e081caac20a0a2675cdc791cf32";
-	  sha256 = "sha256-KUiKhA3QhMR9cIQC82FI0AgE+Ud7dAXY50xSn5oWZzI=";
+	  sha256 = "sha256-fm3HfBhbceJkg8JOl389kTrYYMCgCfl6NMZxcLJhzXE=";
 	  finalImageName = "devkitpro/devkitarm";
-	  finalImageTag = "20240202";
+	  finalImageTag = "20240511";
 	};
 	imagePPC = pkgs.dockerTools.pullImage {
 	  imageName = "devkitpro/devkitppc";
