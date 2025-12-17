@@ -104,11 +104,11 @@ kill %1
 			];
 			buildPhase = "true";
 			installPhase = ''
-				mkdir -p $out
+				mkdir -p $out/bin
 				cp -r $src/{devkitARM,libgba,libnds,libctru,libmirko,liborcus,portlibs,tools} $out
 				rm -rf $out/pacman
-				ln -s $out/devkitARM/bin $out/bin
-				ln -s $out/tools/bin $out/bin
+				ln -s $out/devkitARM/bin/* $out/bin
+				ln -s $out/tools/bin/* $out/bin
 			'';
 		};
 
